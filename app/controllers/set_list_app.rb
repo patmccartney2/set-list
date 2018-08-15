@@ -5,4 +5,9 @@ class SetList < Sinatra::Base
     erb :"songs/index"
   end
 
+  helpers do
+    def number_to_currency(number)
+      ('$%.2f' % number).to_s
+    end
+  end
 end
