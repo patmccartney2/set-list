@@ -1,7 +1,8 @@
 <% @songs.each do |song| %>
   <ul>
-    <li><%= song.title %></li>
-    <li><%= number_to_currency(song.length) %></li>
-    <li><%= song.play_count %></li>
+    <li>Title: <%= song.title %></li>
+    <li>Length: <%= song.length %></li>
+    <li>Playlist: <%= song.playlist.name %></li>
+    <li>Play Count: <%= song.play_count %></li>
   </ul>
 <% end %>

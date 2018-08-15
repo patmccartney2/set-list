@@ -30,5 +30,9 @@ RSpec.describe Song do
 
       expect(song).to_not be_valid
     end
+    it 'has one playlist' do
+      association = described_class.reflect_on_association(:playlist)
+      expect(association.macro).to eq :belongs_to
+    end
   end
 end
