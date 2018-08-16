@@ -1,5 +1,9 @@
 class SetList < Sinatra::Base
 
+  get '/' do
+    erb :welcome
+  end
+
   get '/songs' do
     @songs = Song.all
     erb :"songs/index"

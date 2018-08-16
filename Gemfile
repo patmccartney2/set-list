@@ -10,4 +10,6 @@ group :development, :test do
   gem 'tux'
   gem 'rspec'
   gem 'database_cleaner'
+  gem 'capybara'
+  gem 'launchy'
 end
