@@ -1,8 +1,28 @@
 <% songs.each do |song| %>
-  <ul>
-    <li>Title: <%= song.title %></li>
-    <li>Length: <%= song.length %></li>
-    <li>Playlist: <%= song.playlist.name unless song.playlist.nil? %></li>
-    <li>Play Count: <%= song.play_count %></li>
-  </ul>
-<% end %>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0752/8831/products/endless-rain-record-side-rain_1000x.jpg?v=1521979891" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= song.title %></h5>
+      <p class="card-text"><%= song.length %></p>
+      <p class="card-text"><small class="text-muted"><%= song.play_count %></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0752/8831/products/endless-rain-record-side-rain_1000x.jpg?v=1521979891" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= song.title %></h5>
+      <p class="card-text"><%= song.length %></p>
+      <p class="card-text"><small class="text-muted"><%= song.play_count %></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0752/8831/products/endless-rain-record-side-rain_1000x.jpg?v=1521979891" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= song.title %></h5>
+      <p class="card-text"><%= song.length %></p>
+      <p class="card-text"><small class="text-muted"><%= song.play_count %></small></p>
+    </div>
+  </div>
+</div>
+ <% end %>
